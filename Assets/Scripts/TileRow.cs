@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TileRow : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public TileCell[] cells {  get; private set; }
+
+    private void Awake()
     {
-        
+        cells = GetComponentsInChildren<TileCell>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
