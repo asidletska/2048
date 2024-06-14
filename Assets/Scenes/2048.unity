@@ -3522,6 +3522,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   board: {fileID: 141098278}
   gameOver: {fileID: 1204442795}
+  scoreText: {fileID: 2028155615}
+  bestScoreText: {fileID: 195000695}
+  score: 0
 --- !u!1 &2082889583
 GameObject:
   m_ObjectHideFlags: 0

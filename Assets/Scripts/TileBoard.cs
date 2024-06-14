@@ -114,7 +114,9 @@ public class TileBoard : MonoBehaviour
         int index = Mathf.Clamp(IndexOf(b.state) + 1, 0, tileStates.Length - 1);
         int number = b.number * 2;
 
-        b.SetState(tileStates[index], number);  
+        b.SetState(tileStates[index], number); 
+        
+        gameManager.IncreaseScore(number);
     }
     private int IndexOf(TileState state)
     {
