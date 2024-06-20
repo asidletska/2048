@@ -1,8 +1,8 @@
-using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
+using System.Collections;
+using UnityEngine;
 
-public class TileBoard : MonoBehaviour
+public class TileBoard5x5 : MonoBehaviour
 {
     public GameManager gameManager;
     public Tile tilePrefab;
@@ -114,8 +114,8 @@ public class TileBoard : MonoBehaviour
         int index = Mathf.Clamp(IndexOf(b.state) + 1, 0, tileStates.Length - 1);
         int number = b.number * 2;
 
-        b.SetState(tileStates[index], number); 
-        
+        b.SetState(tileStates[index], number);
+
         gameManager.IncreaseScore(number);
     }
     private int IndexOf(TileState state)
@@ -135,7 +135,7 @@ public class TileBoard : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         waiting = false;
 
-        foreach(var tile in tiles)
+        foreach (var tile in tiles)
         {
             tile.locked = false;
         }
