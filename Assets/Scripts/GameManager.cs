@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections;
 using TMPro;
-using UnityEngine.Rendering;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,7 +10,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI bestScoreText;
     public int score;
     private void Start()
-    {
+    {       
         NewGame();
     }
     public void NewGame()
@@ -26,7 +25,7 @@ public class GameManager : MonoBehaviour
         board.enabled = true;
     }
     public void GameOver()
-    {
+    {        
         board.enabled = false;
         gameOver.interactable = true;
         StartCoroutine(Fade(gameOver, 1f, 1f));
@@ -62,11 +61,12 @@ public class GameManager : MonoBehaviour
 
         if (score > hiscore)
         {
-            PlayerPrefs.SetInt("Best score", score);
+            PlayerPrefs.SetInt("Best score", score);            
         }
     }
     private int LoadHiscore()
     {
+        //scoreManager.SaveHighScore("", score);
         return PlayerPrefs.GetInt("Best score", 0);
     }
 }

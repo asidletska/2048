@@ -8,8 +8,5 @@ public class menu : MonoBehaviour
         SceneManager.LoadScene(2);
         Time.timeScale = 1.0f;
     }
-    public void OnExitHandler()
-    {
-        Application.Quit();
-    }
+
 }
