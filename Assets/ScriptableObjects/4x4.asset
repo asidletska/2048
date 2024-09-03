@@ -16,4 +16,4 @@ MonoBehaviour:
   mapName: 4x4
   mapDescription: 4x4
   mapImage: {fileID: 21300000, guid: 9fa7382bb79ea7e43be1aaf7ffb568bf, type: 3}
-  sceneLoad: {fileID: 102900000, guid: 8c9cfa26abfee488c85f1582747f6a02, type: 3}
+  sceneName: 2048

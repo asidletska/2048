@@ -15,6 +15,6 @@ public class MapDisplay : MonoBehaviour
         mapImage.sprite = map.mapImage;
 
         playButton.onClick.RemoveAllListeners();
-        playButton.onClick.AddListener(() => SceneManager.LoadScene(map.sceneLoad.name));
+        playButton.onClick.AddListener(() => SceneManager.LoadScene(map.sceneName));
     }
 }

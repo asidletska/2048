@@ -16,4 +16,4 @@ MonoBehaviour:
   mapName: 3x3
   mapDescription: 3x3
   mapImage: {fileID: 21300000, guid: 3f8db08bcc1bf0a40b78f6339281c7a6, type: 3}
-  sceneLoad: {fileID: 102900000, guid: fde00ff2da8d4aa45aaeaa8dc02e148a, type: 3}
+  sceneName: 2048 2

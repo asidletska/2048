@@ -7,7 +7,7 @@ public class Map : ScriptableObject
     public string mapName;
     public string mapDescription;
     public Sprite mapImage;
-    public Object sceneLoad;
+    public string sceneName;
 
 
 }
